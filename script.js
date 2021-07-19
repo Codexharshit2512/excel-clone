@@ -1,3 +1,5 @@
+import PerfectScrollbar from "perfect-scrollbar";
+
 const ps = new PerfectScrollbar("#cells", {
   wheelSpeed: 10,
   wheelPropagation: true,
@@ -946,3 +948,5 @@ function updateStream(elem, elements) {
   }
   return true;
 }
+
+console.log("hello parcel");
