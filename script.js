@@ -815,7 +815,9 @@ function saveFile(newClicked) {
 }
 
 function openFile() {
-  let inputFile = $(`<input accept="application/json" type="file" />`);
+  let inputFile = $(
+    `<input style="opacity:0;width:0;height:0;" accept="application/json" type="file" />`
+  );
   $(".container").append(inputFile);
   inputFile.click();
   inputFile.change(function (e) {

@@ -2160,7 +2160,7 @@ function saveFile(newClicked) {
 }
 
 function openFile() {
-  var inputFile = $("<input accept=\"application/json\" type=\"file\" />");
+  var inputFile = $("<input style=\"opacity:0;width:0;height:0;\" accept=\"application/json\" type=\"file\" />");
   $(".container").append(inputFile);
   inputFile.click();
   inputFile.change(function (e) {
@@ -2363,7 +2363,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52069" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55458" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
