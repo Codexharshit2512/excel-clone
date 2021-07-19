@@ -2175,7 +2175,7 @@ function openFile() {
       sheets = JSON.parse(reader.result);
       console.log(sheets);
       var keys = Object.keys(sheets);
-      lastlyAddedSheet = 1;
+      lastSheetAdded = 1;
 
       for (var _i10 = 0, _keys = keys; _i10 < _keys.length; _i10++) {
         var _i11 = _keys[_i10];
@@ -2184,7 +2184,7 @@ function openFile() {
           var splittedSheetArray = _i11.split("Sheet");
 
           if (splittedSheetArray.length == 2 && !isNaN(splittedSheetArray[1])) {
-            lastlyAddedSheet = parseInt(splittedSheetArray[1]);
+            lastSheetAdded = parseInt(splittedSheetArray[1]);
           }
         }
 
@@ -2363,7 +2363,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63696" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52069" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

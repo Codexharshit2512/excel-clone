@@ -829,12 +829,12 @@ function openFile() {
       sheets = JSON.parse(reader.result);
       console.log(sheets);
       let keys = Object.keys(sheets);
-      lastlyAddedSheet = 1;
+      lastSheetAdded = 1;
       for (let i of keys) {
         if (i.includes("Sheet")) {
           let splittedSheetArray = i.split("Sheet");
           if (splittedSheetArray.length == 2 && !isNaN(splittedSheetArray[1])) {
-            lastlyAddedSheet = parseInt(splittedSheetArray[1]);
+            lastSheetAdded = parseInt(splittedSheetArray[1]);
           }
         }
         $(".sheet-tab-container").append(
